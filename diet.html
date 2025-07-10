@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diet Plan: Bulk & Cut</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff3c3c;
+  margin-bottom: 40px;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.plan {
+  background: #1a1a1a;
+  border: 2px solid #ff3c3c;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  transition: 0.3s ease-in-out;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+}
+
+.plan h2 {
+  color: #ff3c3c;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #ff3c3c;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.meal {
+  margin-bottom: 20px;
+}
+
+.meal h3 {
+  color: #ff6b6b;
+  margin-bottom: 5px;
+}
+
+.meal p {
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.meal ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+
+.meal ul li {
+  border-bottom: 1px solid #333;
+  padding: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Diet Plan</h1>
+    <div class="plans">
+
+      <!-- Bulking Non-Veg -->
+      <section class="plan">
+        <h2>Bulking Plan - Non-Veg</h2>
+        <div class="meal">
+          <h3>Breakfast</h3>
+          <p>Omelette, peanut butter toast</p>
+          <ul>
+            <li>Calories: 600</li>
+            <li>Protein: 35g</li>
+            <li>Carbs: 45g</li>
+            <li>Fat: 25g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Lunch</h3>
+          <p>Grilled chicken, rice, beans</p>
+          <ul>
+            <li>Calories: 750</li>
+            <li>Protein: 50g</li>
+            <li>Carbs: 60g</li>
+            <li>Fat: 30g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Dinner</h3>
+          <p>Fish curry, brown rice, salad</p>
+          <ul>
+            <li>Calories: 680</li>
+            <li>Protein: 40g</li>
+            <li>Carbs: 40g</li>
+            <li>Fat: 28g</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Bulking Veg -->
+      <section class="plan">
+        <h2>Bulking Plan - Veg</h2>
+        <div class="meal">
+          <h3>Breakfast</h3>
+          <p>Oats with milk, dry fruits</p>
+          <ul>
+            <li>Calories: 500</li>
+            <li>Protein: 20g</li>
+            <li>Carbs: 60g</li>
+            <li>Fat: 18g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Lunch</h3>
+          <p>Paneer, roti, dal, rice</p>
+          <ul>
+            <li>Calories: 700</li>
+            <li>Protein: 35g</li>
+            <li>Carbs: 70g</li>
+            <li>Fat: 25g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Dinner</h3>
+          <p>Soya curry, quinoa, salad</p>
+          <ul>
+            <li>Calories: 600</li>
+            <li>Protein: 30g</li>
+            <li>Carbs: 50g</li>
+            <li>Fat: 20g</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Cutting Non-Veg -->
+      <section class="plan">
+        <h2>Cutting Plan - Non-Veg</h2>
+        <div class="meal">
+          <h3>Breakfast</h3>
+          <p>Boiled eggs, black coffee</p>
+          <ul>
+            <li>Calories: 300</li>
+            <li>Protein: 25g</li>
+            <li>Carbs: 5g</li>
+            <li>Fat: 15g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Lunch</h3>
+          <p>Chicken breast, boiled veggies</p>
+          <ul>
+            <li>Calories: 450</li>
+            <li>Protein: 40g</li>
+            <li>Carbs: 20g</li>
+            <li>Fat: 10g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Dinner</h3>
+          <p>Grilled fish, greens</p>
+          <ul>
+            <li>Calories: 400</li>
+            <li>Protein: 30g</li>
+            <li>Carbs: 15g</li>
+            <li>Fat: 12g</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Cutting Veg -->
+      <section class="plan">
+        <h2>Cutting Plan - Veg</h2>
+        <div class="meal">
+          <h3>Breakfast</h3>
+          <p>Sprouts, green tea</p>
+          <ul>
+            <li>Calories: 250</li>
+            <li>Protein: 18g</li>
+            <li>Carbs: 20g</li>
+            <li>Fat: 8g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Lunch</h3>
+          <p>Boiled tofu, salad, brown rice</p>
+          <ul>
+            <li>Calories: 420</li>
+            <li>Protein: 30g</li>
+            <li>Carbs: 30g</li>
+            <li>Fat: 10g</li>
+          </ul>
+        </div>
+        <div class="meal">
+          <h3>Dinner</h3>
+          <p>Vegetable soup, mixed greens</p>
+          <ul>
+            <li>Calories: 300</li>
+            <li>Protein: 15g</li>
+            <li>Carbs: 20g</li>
+            <li>Fat: 8g</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
